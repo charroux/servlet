@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	Nom : <%=request.getAttribute("name")%>
+	Nom : <%=request.getAttribute("name")%><br>
 	Age : <%=request.getAttribute("age") %>
 
 </body>
