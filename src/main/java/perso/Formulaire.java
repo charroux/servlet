@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Formulaire extends HttpServlet{
 
-	public void doGet(HttpServletRequest request, HttpServletResponse resp) throws IOException, ServletException{
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		String age = request.getParameter("age");
 		System.out.println("get : " + age );
 	}
 
-	public void doPost(HttpServletRequest request, HttpServletResponse resp) throws IOException, ServletException{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		String nom = request.getParameter("nom");
 		System.out.println("post : " + nom);
 	}

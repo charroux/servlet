@@ -12,6 +12,19 @@
 		<url-pattern>/urlFormulaire</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<description>
+		</description>
+		<display-name>PersonServlet</display-name>
+		<servlet-name>PersonServlet</servlet-name>
+		<servlet-class>perso.PersonServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PersonServlet</servlet-name>
+		<url-pattern>/personServlet</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
