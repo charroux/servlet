@@ -38,20 +38,25 @@ public class ListeProduitsServlet extends HttpServlet {
 		
 		ArrayList<Produit> produits = new ArrayList<Produit>();
 		
+		String nom = null;
+		Integer quantite = null;
+		
 		Enumeration<String> names = request.getParameterNames();
 		while(names.hasMoreElements()){
-			String name = names.nextElement();
-			String nom = null;
-			int quantite = 0;
-			if(name.startsWith("nom")){
-				nom = request.getParameter(name);
-			}
-			if(name.startsWith("quantite")){
-				quantite = Integer.parseInt(request.getParameter(name));
-			}
-			Produit produit = new Produit(nom, quantite);
+			String parameterName = names.nextElement();
 			
-			produits.add(produit);
+			if(parameterName.startsWith("nom")){
+				nom = request.getParameter(parameterName);
+			}
+			if(parameterName.startsWith("quantite")){
+				quantite = Integer.parseInt(request.getParameter(parameterName));
+			}
+			if(nom!=null && quantite!=null){
+				Produit produit = new Produit(nom, quantite);
+				produits.add(produit);
+				nom = null;
+				quantite = null;
+			}
 		}
 		
 		request.setAttribute("produits", produits);
