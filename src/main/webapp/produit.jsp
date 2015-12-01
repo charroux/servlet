@@ -11,6 +11,7 @@
 <body>
 <jsp:useBean id="produit" class="perso.Produit" scope="request"/>
 
-name: <c:out value="${produit.name}"/>
+name: <c:out value="${produit.name}"/><br>
+quantite : <c:out value="${produit.quantite}"/><br>
 </body>
 </html>
