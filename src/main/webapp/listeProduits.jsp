@@ -9,11 +9,26 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="produit" class="perso.Produit" scope="request"/>
+<jsp:useBean id="liste" class="java.util.ArrayList" scope="request"/>
 
-JSP qui affiche un bean:<br>
 
-name: <c:out value="${produit.name}"/><br>
-quantite : <c:out value="${produit.quantite}"/><br>
+	<table>
+	
+	<tr>
+			<th>Name</th>
+			<th>Quantite</th>
+	</tr>
+	
+	<c:forEach items="${produits}" var="produit">
+		<tr>
+			<td><c:out value="${produit.name}"/></td>
+			<td><c:out value="${produit.quantite}"/></td>
+		</tr>
+		
+		
+	</c:forEach>
+		
+	</table>
+	
 </body>
 </html>

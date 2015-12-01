@@ -3,13 +3,13 @@ package perso;
 public class Produit {
 	
 	String name;
-	String quantite;
+	int quantite;
 	
 	public Produit() {
 		super();
 	}
 
-	public Produit(String name, String quantite) {
+	public Produit(String name, int quantite) {
 		super();
 		this.name = name;
 		this.quantite = quantite;
@@ -23,11 +23,11 @@ public class Produit {
 		this.name = name;
 	}
 
-	public String getQuantite() {
+	public int getQuantite() {
 		return quantite;
 	}
 
-	public void setQuantite(String quantite) {
+	public void setQuantite(int quantite) {
 		this.quantite = quantite;
 	}
 	
