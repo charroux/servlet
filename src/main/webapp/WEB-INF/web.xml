@@ -3,6 +3,16 @@
 <display-name>Data</display-name>
 
 	<servlet>
+		<servlet-name>Form</servlet-name>
+		<servlet-class>perso.FormServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Form</servlet-name>
+		<url-pattern>/urlForm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>personne</servlet-name>
 		<servlet-class>perso.Formulaire</servlet-class>
 	</servlet>
