@@ -3,6 +3,16 @@
 <display-name>Data</display-name>
 
 	<servlet>
+		<servlet-name>FormCheckbox</servlet-name>
+		<servlet-class>perso.FormCheckboxServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FormCheckbox</servlet-name>
+		<url-pattern>/urlFormCheckbox</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>Form</servlet-name>
 		<servlet-class>perso.FormServlet</servlet-class>
 	</servlet>
