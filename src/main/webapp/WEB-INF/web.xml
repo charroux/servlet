@@ -3,6 +3,16 @@
 <display-name>Data</display-name>
 
 	<servlet>
+		<servlet-name>FormEtCookie</servlet-name>
+		<servlet-class>perso.CookieServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FormEtCookie</servlet-name>
+		<url-pattern>/urlToObtainACookie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>FormCheckbox</servlet-name>
 		<servlet-class>perso.FormCheckboxServlet</servlet-class>
 	</servlet>
